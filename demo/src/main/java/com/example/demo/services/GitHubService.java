@@ -25,7 +25,7 @@ public class GitHubService {
     private final RepositoryRepository repositoryRepository;
 
     public GitHubService(RestTemplateBuilder builder, RepositoryRepository repositoryRepository) {
-        this.restTemplate = builder.build();
+        this.restTemplate = builder.build(); // ✅ now this works
         this.repositoryRepository = repositoryRepository;
     }
 
